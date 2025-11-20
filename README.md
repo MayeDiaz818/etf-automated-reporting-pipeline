@@ -57,7 +57,7 @@ This selection mixes traditional equity ETFs with crypto ETFs, highlighting cont
 
 ## 🧱 Project Structure
 
-<pre>
+<pre><code>
 main.py
 config.yaml
 
@@ -75,7 +75,8 @@ data/
 output/
     charts/
     final_report/
-<pre>
+</code></pre>
+
   
 ---
 
