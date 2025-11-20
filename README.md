@@ -3,7 +3,7 @@
 
 This project is an **end-to-end automated data analytics pipeline** that downloads ETF market data, cleans and structures it, computes financial KPIs, detects anomalous events, generates visualizations, and exports a comprehensive reporting package.
 
-The design follows a **modular, production-style architecture**, similar to reporting workflows used in financial institutions (e.g., RBC, Scotiabank, BMO).
+The design follows a **modular, production-style architecture**, similar to reporting workflows used in financial institutions.
 
 ---
 
