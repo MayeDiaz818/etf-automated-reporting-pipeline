@@ -77,8 +77,6 @@ output/
 charts/
 final_report/
 
-Copy code
-
 ---
 
 ## 🛠️ How to Run the Pipeline
