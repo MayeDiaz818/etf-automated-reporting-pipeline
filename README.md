@@ -57,24 +57,24 @@ This selection mixes traditional equity ETFs with crypto ETFs, highlighting cont
 
 ## 🧱 Project Structure
 
+```txt
 main.py
 config.yaml
 
 src/
-data_ingestion.py
-data_cleaning.py
-kpi_calculations.py
-anomaly_detection.py
-reporting.py
+    data_ingestion.py
+    data_cleaning.py
+    kpi_calculations.py
+    anomaly_detection.py
+    reporting.py
 
 data/
-raw/
-clean/
+    raw/
+    clean/
 
 output/
-charts/
-final_report/
-
+    charts/
+    final_report/
 
 ---
 
