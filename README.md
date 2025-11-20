@@ -3,7 +3,7 @@ Automated Data Pipeline for ETF Performance, Risk, and Anomaly Detection (Python
 
 This project is an end-to-end automated data analytics pipeline that downloads ETF market data, performs cleaning and transformation, computes financial KPIs, detects anomalies, generates visualizations, and exports a complete reporting package.
 
-The pipeline is built in a modular, production-style architecture, similar to analytics workflows used in banking environments (e.g., RBC, Scotiabank, BMO).
+The pipeline is built in a modular, production-style architecture, similar to analytics workflows used in banking environments.
 
 **🚀 Features**
 ✔ Automated daily data ingestion
