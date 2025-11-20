@@ -1,9 +1,11 @@
 **📈 ETF Automated Reporting Pipeline**
+
 Automated Data Pipeline for ETF Performance, Risk, and Anomaly Detection (Python)
 
 This project is an end-to-end automated data analytics pipeline that downloads ETF market data, performs cleaning and transformation, computes financial KPIs, detects anomalies, generates visualizations, and exports a complete reporting package.
 
 The pipeline is built in a modular, production-style architecture, similar to analytics workflows used in banking environments.
+
 
 **🚀 Features**
 
@@ -78,6 +80,7 @@ Date range
 
 All folder paths
 
+
 **📊 ETF Universe Analyzed**
 
 The project currently analyzes:
@@ -92,34 +95,27 @@ ETHH-B.TO – Ethereum ETF (Purpose)
 
 This mix includes equity ETFs + crypto ETFs to demonstrate contrasting behavior across asset classes.
 
+
 **🧱 Project Structure**
 
 main.py
-
 config.yaml
 
 src/
    data_ingestion.py
-   
    data_cleaning.py
-   
    kpi_calculations.py
-   
    anomaly_detection.py
-   
    reporting.py
 
 data/
-
    raw/
-   
    clean/
 
 output/
-
    charts/
-   
    final_report/
+
 
 **🛠️ How to Run the Pipeline**
 
@@ -133,39 +129,64 @@ output/
   output/final_report/
   output/charts/
 
+
 **📈 Sample Outputs**
+
 KPI Summary
+
 Contains:
+
 Annualized Volatility
+
 Maximum Drawdown
+
 YTD Return
 
+
 Anomaly Summary For each ETF:
+
 of anomalies
+
 worst daily drop (with date)
+
 largest positive jump (with date)
 
+
 Visualizations included
+
 Cumulative returns
+
 Rolling 30-day volatility
+
 Drawdown curves
+
 Anomaly overlays
+
 Monthly returns heatmaps
+
 
 **🔍 Skills Demonstrated**
 
 Python (pandas, numpy, matplotlib, seaborn, scipy)
+
 Data cleaning & automation
+
 Financial analytics & KPI computation
+
 Anomaly detection
+
 Modular pipeline design
+
 YAML configuration management
+
 Data visualization
+
 Risk analytics concepts (volatility, drawdown, extreme events)
 
 
 **👩🏻‍💻 Author**
 
 Mayerlin Díaz
+
 Data Analyst | Python | Financial Analytics
-Toronto, ON
+
