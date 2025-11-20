@@ -117,7 +117,6 @@ clean/
 output/
 charts/
 final_report/
-```
 
 **🛠️ How to Run the Pipeline**
 
