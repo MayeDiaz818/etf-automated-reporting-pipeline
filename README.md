@@ -7,6 +7,7 @@ This project is an end-to-end automated data analytics pipeline that downloads E
 The pipeline is built in a modular, production-style architecture, similar to analytics workflows used in banking environments.
 
 
+
 **🚀 Features**
 
 ✔ Automated daily data ingestion
@@ -98,36 +99,43 @@ This mix includes equity ETFs + crypto ETFs to demonstrate contrasting behavior 
 
 **🧱 Project Structure**
 
+````
 main.py
 config.yaml
 
 src/
-   data_ingestion.py
-   data_cleaning.py
-   kpi_calculations.py
-   anomaly_detection.py
-   reporting.py
+data_ingestion.py
+data_cleaning.py
+kpi_calculations.py
+anomaly_detection.py
+reporting.py
 
 data/
-   raw/
-   clean/
+raw/
+clean/
 
 output/
-   charts/
-   final_report/
-
+charts/
+final_report/
+```
 
 **🛠️ How to Run the Pipeline**
 
 1. Install dependencies
-   pip install -r requirements.txt
+```
+pip install -r requirements.txt
+```
 
 2. Run the pipeline
-   python main.py
+```
+python main.py
+```
+
    
   The full report will be generated in:
   output/final_report/
   output/charts/
+
 
 
 **📈 Sample Outputs**
@@ -163,6 +171,7 @@ Drawdown curves
 Anomaly overlays
 
 Monthly returns heatmaps
+
 
 
 **🔍 Skills Demonstrated**
