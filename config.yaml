@@ -1,0 +1,15 @@
+etfs:
+  - VCN.TO
+  - XIC.TO
+  - BTCC-B.TO
+  - ETHH-B.TO
+
+start_date: "2022-01-01"
+end_date: "today"
+
+paths:
+  raw: "data/raw"
+  clean: "data/clean"
+  output: "output"
+  charts: "output/charts"
+  reports: "output/final_report"
