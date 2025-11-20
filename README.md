@@ -6,12 +6,17 @@ This project is an end-to-end automated data analytics pipeline that downloads E
 The pipeline is built in a modular, production-style architecture, similar to analytics workflows used in banking environments.
 
 **🚀 Features**
+
 ✔ Automated daily data ingestion
+
 Fetches historical ETF OHLC data using yfinance.
 
 ✔ Data cleaning & resampling
+
 Extracts clean close-price tables
+
 Computes daily returns
+
 Computes monthly returns using "ME" (month-end)
 
 ✔ Financial KPIs
