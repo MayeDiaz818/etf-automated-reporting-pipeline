@@ -57,7 +57,7 @@ This selection mixes traditional equity ETFs with crypto ETFs, highlighting cont
 
 ## 🧱 Project Structure
 
-```txt
+<pre>
 main.py
 config.yaml
 
@@ -75,8 +75,10 @@ data/
 output/
     charts/
     final_report/
-
+<pre>
+  
 ---
+
 
 ## 🛠️ How to Run the Pipeline
 
@@ -107,7 +109,6 @@ output/charts/
 For exploration, visual explanations, and step-by-step analysis:
 
 👉 **[View the Analysis Notebook](./automated_etf_reporting.ipynb)**  
-(Replace with your notebook filename)
 
 ---
 
