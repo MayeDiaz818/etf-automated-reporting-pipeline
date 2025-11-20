@@ -1,105 +1,64 @@
-**📈 ETF Automated Reporting Pipeline**
+# 📈 ETF Automated Reporting Pipeline  
+### Automated Data Pipeline for ETF Performance, Risk, and Anomaly Detection (Python)
 
-Automated Data Pipeline for ETF Performance, Risk, and Anomaly Detection (Python)
+This project is an **end-to-end automated data analytics pipeline** that downloads ETF market data, cleans and structures it, computes financial KPIs, detects anomalous events, generates visualizations, and exports a comprehensive reporting package.
 
-This project is an end-to-end automated data analytics pipeline that downloads ETF market data, performs cleaning and transformation, computes financial KPIs, detects anomalies, generates visualizations, and exports a complete reporting package.
+The design follows a **modular, production-style architecture**, similar to reporting workflows used in financial institutions (e.g., RBC, Scotiabank, BMO).
 
-The pipeline is built in a modular, production-style architecture, similar to analytics workflows used in banking environments.
+---
 
+## 🚀 Features
 
+### ✔ Automated data ingestion  
+Downloads historical OHLC data for selected ETFs using `yfinance`.
 
-**🚀 Features**
+### ✔ Data cleaning & transformation  
+- Extracts structured close-price tables  
+- Computes **daily returns**  
+- Computes **monthly returns** using updated `"ME"` (month-end) resampling  
+- Saves clean datasets for downstream analysis
 
-✔ Automated daily data ingestion
+### ✔ Financial KPIs  
+Includes:
+- Cumulative returns  
+- Annualized volatility  
+- Maximum drawdown  
+- Year-to-date (YTD) return  
+- Rolling 30-day volatility  
 
-Fetches historical ETF OHLC data using yfinance.
+### ✔ Anomaly detection  
+Using z-scores (`|z| > 3`), the pipeline identifies extreme return events and produces:
+- A **full anomaly dataset**
+- A **summary report** with worst drops and largest jumps
 
+### ✔ Automated reporting  
+Exports:
+- `KPI_Summary.xlsx`  
+- `Anomaly_Summary.xlsx`  
+- All visualizations (PNG):  
+  - Cumulative returns  
+  - Drawdown curves  
+  - Rolling volatility  
+  - Monthly heatmaps  
+  - Anomaly overlays  
 
-✔ Data cleaning & resampling
+---
 
-Extracts clean close-price tables
+## 📊 ETF Universe Analyzed
 
-Computes daily returns
+The project evaluates the following ETFs:
 
-Computes monthly returns using "ME" (month-end)
+- **VCN.TO** — Vanguard FTSE Canada Index  
+- **XIC.TO** — iShares Core S&P/TSX Composite Index  
+- **BTCC-B.TO** — Purpose Bitcoin ETF  
+- **ETHH-B.TO** — Purpose Ethereum ETF  
 
+A mix of equity and crypto ETFs highlights differences in risk and return behavior.
 
-✔ Financial KPIs
+---
 
-Annualized volatility
+## 🧱 Project Structure
 
-Maximum drawdown
-
-YTD return
-
-Cumulative returns
-
-Rolling 30-day volatility
-
-
-✔ Anomaly detection
-
-Using z-score thresholding (|z| > 3), the system identifies extreme return events and produces:
-
-full anomaly dataset
-
-anomaly summary by ETF
-
-
-✔ Automated reporting
-
-Exports professional reports:
-
-KPI_Summary.xlsx
-
-Anomaly_Summary.xlsx
-
-Charts (PNG) for cumulative returns, volatility, drawdowns, heatmaps, anomalies overlay
-
-
-✔ Modular code architecture
-
-src/
-    data_ingestion.py
-    
-    data_cleaning.py
-    
-    kpi_calculations.py
-    
-    anomaly_detection.py
-    
-    reporting.py
-    
-    
-✔ Configurable via YAML
-
-The config.yaml file controls:
-
-ETFs to analyze
-
-Date range
-
-All folder paths
-
-
-**📊 ETF Universe Analyzed**
-
-The project currently analyzes:
-
-VCN.TO – Vanguard FTSE Canada Index ETF
-
-XIC.TO – iShares Core S&P/TSX Capped Composite Index
-
-BTCC-B.TO – Bitcoin ETF (Purpose)
-
-ETHH-B.TO – Ethereum ETF (Purpose)
-
-This mix includes equity ETFs + crypto ETFs to demonstrate contrasting behavior across asset classes.
-
-
-**🧱 Project Structure**
-
-````
 main.py
 config.yaml
 
@@ -118,83 +77,68 @@ output/
 charts/
 final_report/
 
-**🛠️ How to Run the Pipeline**
 
-1. Install dependencies
-```
+---
+
+## 🛠️ How to Run the Pipeline
+
+### 1. Install dependencies
+
 pip install -r requirements.txt
-```
 
-2. Run the pipeline
-```
+
+### 2. Run the automated pipeline
+
 python main.py
-```
-
-   
-  The full report will be generated in:
-  output/final_report/
-  output/charts/
 
 
+Output files will be generated in:
 
-**📈 Sample Outputs**
-
-KPI Summary
-
-Contains:
-
-Annualized Volatility
-
-Maximum Drawdown
-
-YTD Return
+output/charts/
+output/final_report/
 
 
-Anomaly Summary For each ETF:
+---
 
-of anomalies
+## 📈 Sample Outputs
 
-worst daily drop (with date)
+### KPI Summary (Excel)
+Includes:
+- Annualized Volatility  
+- Maximum Drawdown  
+- YTD Return  
 
-largest positive jump (with date)
+### Anomaly Summary (Excel)
+Includes, per ETF:
+- Number of anomalies  
+- Worst drop + date  
+- Largest jump + date  
 
+### Visualizations (PNG)
+- `cumulative_returns.png`  
+- `drawdown_curves.png`  
+- `rolling_volatility_30d.png`  
+- `monthly_heatmaps.png`  
+- `anomaly_overlay_subplots.png`  
 
-Visualizations included
+---
 
-Cumulative returns
+## 🔍 Skills Demonstrated
 
-Rolling 30-day volatility
+- Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)  
+- Data automation & pipeline design  
+- Financial analytics (risk, volatility, drawdown)  
+- Anomaly detection  
+- Data visualization best practices  
+- Modular programming (multi-file architecture)  
+- YAML configuration handling  
+- Reporting automation  
 
-Drawdown curves
+---
 
-Anomaly overlays
+## 👩🏻‍💻 Author
 
-Monthly returns heatmaps
-
-
-
-**🔍 Skills Demonstrated**
-
-Python (pandas, numpy, matplotlib, seaborn, scipy)
-
-Data cleaning & automation
-
-Financial analytics & KPI computation
-
-Anomaly detection
-
-Modular pipeline design
-
-YAML configuration management
-
-Data visualization
-
-Risk analytics concepts (volatility, drawdown, extreme events)
-
-
-**👩🏻‍💻 Author**
-
-Mayerlin Díaz
-
-Data Analyst | Python | Financial Analytics
+**Mayerlin Díaz**  
+Data Analyst • Python • Financial Analytics  
+Toronto, Canada  
 
