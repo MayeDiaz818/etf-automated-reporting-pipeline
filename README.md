@@ -159,7 +159,8 @@ All reports are generated using parameterized connections, allowing Power BI Des
 Below are the dashboards included in the /Dashboard folder.
 
 📁 Download the Interactive Power BI Report
-Pipeline_ETF_dashboard.pbix
+👉 **[View the Power BI Report](Dashboard/Pipeline_ETF_dashboard.pbix)** 
+
 
 This is the fully–interactive Power BI report used in the project.
 You can open it in Power BI Desktop to explore all visuals, filters, and automated connections.
