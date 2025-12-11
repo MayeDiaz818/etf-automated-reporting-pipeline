@@ -240,7 +240,7 @@ Dashboards always reflect the most recent market data
 
 ---
 
-## 🔍 Skills Demonstrated
+## 🔍 Skills Demostrated
 
 
 - Python (Pandas, NumPy, Matplotlib, Seaborn, SciPy)  
